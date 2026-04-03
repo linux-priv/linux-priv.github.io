@@ -1,0 +1,107 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__grid-bg"></div>
+  <div class="hero__scanlines"></div>
+  <div class="hero__content">
+    <div class="hero__eyebrow"><span class="blink">▮</span> LINUX-PRIV v{{ .Site.Params.version }} — RELEASED {{ .Site.Params.releaseDate }}</div>
+    <h1 class="hero__title">LINUX<span class="accent">PRIV</span></h1>
+    <p class="hero__sub">Privacy-first. Ethically armed.<br>Built for those who demand control.</p>
+    <div class="hero__actions">
+      <a href="/download/" class="btn btn--primary">Download Now</a>
+      <a href="{{ .Site.Params.githubURL }}" class="btn btn--ghost" target="_blank">View on GitHub</a>
+    </div>
+    <div class="hero__meta">
+      <span>Based on Linux Mint 22.3</span>
+      <span>·</span>
+      <span>Cinnamon Desktop</span>
+      <span>·</span>
+      <span>x86_64</span>
+    </div>
+  </div>
+  <div class="hero__terminal">
+    <div class="terminal">
+      <div class="terminal__bar">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="terminal__title">linux-priv ~ bash</span>
+      </div>
+      <div class="terminal__body">
+        <div class="terminal__line"><span class="prompt">root@linux-priv</span><span class="path">:~#</span> <span class="cmd type-1">nmap -sV --open 192.168.1.0/24</span></div>
+        <div class="terminal__line out">Starting Nmap 7.94 — stealth scan enabled</div>
+        <div class="terminal__line out">Host: 192.168.1.1 — Ports: 22/open/tcp</div>
+        <div class="terminal__line"><span class="prompt">root@linux-priv</span><span class="path">:~#</span> <span class="cmd type-2">tor --verify-config</span></div>
+        <div class="terminal__line out">Configuration OK. Anonymity layer active.</div>
+        <div class="terminal__line"><span class="prompt">root@linux-priv</span><span class="path">:~#</span> <span class="cmd type-3">veracrypt --mount /dev/sdb1</span></div>
+        <div class="terminal__line out">Volume mounted. All data encrypted.</div>
+        <div class="terminal__line"><span class="prompt">root@linux-priv</span><span class="path">:~#</span> <span class="cursor-blink">█</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title">Built for the <span class="accent">serious</span> user</h2>
+    <div class="features__grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">🔒</div>
+        <h3>Hardened by Default</h3>
+        <p>AppArmor profiles, firewall rules, and kernel hardening patches pre-configured out of the box.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🌐</div>
+        <h3>Anonymous Networking</h3>
+        <p>Tor, Wireguard, and ProxyChains pre-installed. DNS-over-HTTPS enforced system-wide.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🛡️</div>
+        <h3>Ethical Hacking Suite</h3>
+        <p>Nmap, Metasploit, Wireshark, Burp Suite CE, and 40+ security tools ready to go.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">💾</div>
+        <h3>Full Disk Encryption</h3>
+        <p>LUKS2 encryption during install with VeraCrypt for portable encrypted containers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🧹</div>
+        <h3>Anti-Telemetry</h3>
+        <p>All telemetry, tracking, and data-collection services stripped. Your data stays yours.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🖥️</div>
+        <h3>Familiar Desktop</h3>
+        <p>Cinnamon desktop — powerful, customizable, and comfortable for daily driving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS STRIP -->
+<section class="tools-strip">
+  <div class="container">
+    <p class="tools-strip__label">INCLUDED TOOLS</p>
+    <div class="tools-strip__list">
+      <span>Nmap</span><span>Metasploit</span><span>Wireshark</span><span>Burp Suite</span>
+      <span>Aircrack-ng</span><span>John the Ripper</span><span>Hashcat</span><span>Tor Browser</span>
+      <span>VeraCrypt</span><span>KeePassXC</span><span>ProxyChains</span><span>Maltego</span>
+      <span>Nmap</span><span>Metasploit</span><span>Wireshark</span><span>Burp Suite</span>
+      <span>Aircrack-ng</span><span>John the Ripper</span><span>Hashcat</span><span>Tor Browser</span>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to take control?</h2>
+    <p>Free, open source, and always will be.</p>
+    <a href="/download/" class="btn btn--primary btn--large">Get Linux-Priv {{ .Site.Params.version }}</a>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">LINUX<span class="accent">PRIV</span></span>
+        <p>Privacy-first Linux distribution.<br>Free and open source forever.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Project</h4>
+        <a href="/download/">Download</a>
+        <a href="/docs/">Documentation</a>
+        <a href="/blog/">Blog</a>
+      </div>
+      <div class="footer__links">
+        <h4>Community</h4>
+        <a href="{{ .Site.Params.githubURL }}" target="_blank">GitHub</a>
+        <a href="{{ .Site.Params.githubURL }}/issues" target="_blank">Report a Bug</a>
+        <a href="{{ .Site.Params.githubURL }}/discussions" target="_blank">Discussions</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© {{ now.Year }} Linux-Priv Project. Licensed under GPL-3.0.</p>
+      <p class="mono">Not affiliated with Linux Mint or Canonical.</p>
+    </div>
+  </div>
+</footer>

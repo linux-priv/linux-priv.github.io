@@ -1,0 +1,34 @@
+baseURL = "https://linux-priv.github.io/"
+languageCode = "en-us"
+title = "Linux-Priv"
+theme = "linux-priv-theme"
+
+[params]
+  description = "A privacy-first, ethical hacking Linux distribution"
+  tagline = "Own your system. Own your data."
+  version = "1.0.0"
+  releaseDate = "2026-04-03"
+  downloadURL = "https://github.com/linux-priv/releases"
+  githubURL = "https://github.com/linux-priv"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Download"
+    url = "/download/"
+    weight = 2
+  [[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/linux-priv"
+    weight = 5

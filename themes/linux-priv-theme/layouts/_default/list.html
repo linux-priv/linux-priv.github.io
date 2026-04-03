@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="page-container container">
+  <h1>{{ .Title }}</h1>
+  <div class="list-grid">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="list-card">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Summary }}</p>
+      <span class="list-card__date mono">{{ .Date.Format "2006-01-02" }}</span>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
