@@ -1,6 +1,6 @@
 <nav class="nav">
   <div class="nav__inner">
-    <a href="/" class="nav__logo">LINUX<span class="accent">PRIV</span></a>
+    <a href="/" class="nav__logo"><span class="logo-symbol">&gt;_</span> LINUX<span class="accent">PRIV</span></a>
     <ul class="nav__links">
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL }}" {{ if eq .Name "GitHub" }}target="_blank"{{ end }}>{{ .Name }}</a></li>

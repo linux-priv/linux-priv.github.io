@@ -562,3 +562,12 @@ body {
   .footer__brand { grid-column: span 1; }
   .footer__bottom { flex-direction: column; text-align: center; }
 }
+.logo-symbol {
+  background: linear-gradient(135deg, #00ffaa, #008833);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--mono);
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
